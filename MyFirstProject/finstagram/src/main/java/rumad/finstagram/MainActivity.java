@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         String[] CEOs = new String[]{"Musk", "Zuck", "Nadella", "Pichai", "Cook"};
-
+        int[] pictures=new int[]{R.drawable.elon_musk,R.drawable.mark_zuckerberg,R.drawable.satya_nadella,R.drawable.sundar_pichai,R.drawable.tim_cook};
         // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(CEOs);
+        mAdapter = new MyAdapter(CEOs,pictures);
         mRecyclerView.setAdapter(mAdapter);
 
 
