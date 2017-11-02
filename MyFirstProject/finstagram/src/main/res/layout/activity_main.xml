@@ -7,7 +7,36 @@
     android:layout_height="match_parent"
     tools:context="rumad.finstagram.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.v7.widget.Toolbar
+        android:elevation="6dp"
+        android:background="@color/colorPrimaryLight"
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_view_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center_vertical"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elon Musk"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -18,7 +47,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
-    </android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.AppBarLayout>-->
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
